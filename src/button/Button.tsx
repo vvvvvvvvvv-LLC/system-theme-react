@@ -19,11 +19,7 @@ const Button: React.FC<ButtonProps> = ({
     className += ` ${styles["btn-default"]}`;
   }
   return (
-    <button
-      className={className}
-      disabled={disabled}
-      onClick={onClick}
-    >
+    <button className={className} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );

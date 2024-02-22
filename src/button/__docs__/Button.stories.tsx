@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { fn } from "@storybook/test";
 import Example from "./Example";
 
 const meta: Meta<typeof Example> = {
@@ -14,6 +15,7 @@ export const Primary: Story = {
     children: "Primary",
     primary: true,
     disabled: false,
+    onClick: fn(),
   },
 };
 
@@ -22,7 +24,7 @@ export const Typical: Story = {
     children: "Button",
     primary: false,
     disabled: false,
-    onClick: () => console.log("Clicked"),
+    onClick: fn(),
   },
 };
 
@@ -31,5 +33,6 @@ export const Disabled: Story = {
     children: "Disabled",
     primary: false,
     disabled: true,
+    onClick: fn(),
   },
 };
