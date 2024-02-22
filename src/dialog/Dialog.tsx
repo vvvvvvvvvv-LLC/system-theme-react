@@ -10,7 +10,6 @@ const Dialog: React.FC<DialogProps> = ({
   children
 }) => {
   const className = `${styles["standard-dialog"]} ${styles["center"]} ${styles["scale-down"]}`;
-  console.log(className);
   return (
     <div className={className}>
       { children }
