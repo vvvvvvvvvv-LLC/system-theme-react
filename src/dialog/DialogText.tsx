@@ -5,12 +5,8 @@ export type DialogTextProps = {
   children?: string;
 };
 
-const DialogText: React.FC<DialogTextProps> = ({
-  children
-}) => {
-  return (
-    <p className={styles["dialog-text"]}>{children}</p>
-  );
+const DialogText: React.FC<DialogTextProps> = ({ children }) => {
+  return <p className={styles["dialog-text"]}>{children}</p>;
 };
 
 export default DialogText;
