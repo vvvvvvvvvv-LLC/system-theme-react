@@ -9,6 +9,10 @@
   "files": [
     "/dist"
   ],
+  "repository": "https://github.com/vvvvvvvvvv-LLC/system-theme-react.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
