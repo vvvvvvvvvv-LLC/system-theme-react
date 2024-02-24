@@ -1,6 +1,10 @@
 {
-  "name": "system-theme-react",
-  "version": "1.0.0",
+  "name": "@vvvvvvvvvv/system-theme-react",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vvvvvvvvvv-LLC/system-theme-react.git"
+  },
+  "version": "0.0.1",
   "description": "",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -9,10 +13,6 @@
   "files": [
     "/dist"
   ],
-  "repository": "https://github.com/vvvvvvvvvv-LLC/system-theme-react.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "format": "prettier --write --parser typescript '**/*.{ts,tsx}'",
     "lint": "eslint . --ext .ts,.tsx --ignore-path .gitignore --fix",
