@@ -11,9 +11,7 @@ const Example: FC<ButtonProps> = (props) => {
         height: "100%",
       }}
     >
-      <Button {...props}>
-        {props.children}
-      </Button>
+      <Button {...props}>{props.children}</Button>
     </div>
   );
 };
