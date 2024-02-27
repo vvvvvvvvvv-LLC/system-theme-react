@@ -11,9 +11,9 @@ import Actions from "./AlertActions";
 export type { AlertActionsProps } from "./AlertActions";
 
 type AlertNamespace = typeof AlertParent & {
-  Icon: typeof Icon,
-  Text: typeof Text,
-  Actions: typeof Actions,
+  Icon: typeof Icon;
+  Text: typeof Text;
+  Actions: typeof Actions;
 };
 
 const Alert = AlertParent as AlertNamespace;
@@ -22,6 +22,3 @@ Alert.Text = Text;
 Alert.Actions = Actions;
 
 export default Alert;
-
-
-

@@ -5,11 +5,7 @@ export type AlertIconProps = {
 };
 
 const AlertIcon: React.FC<AlertIconProps> = ({ children }) => {
-  return (
-    <div className={styles["outer-border"]}>
-      { children }
-    </div>
-  );
+  return <div className={styles["outer-border"]}>{children}</div>;
 };
 
 export default AlertIcon;

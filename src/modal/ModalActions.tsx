@@ -1,22 +1,23 @@
 import React from "react";
-import { Button } from "../button";
-import styles from "../styles";
 
-export type AlertActionsProps = {
+import styles from "../styles";
+import { Button } from "../button";
+
+export type ModalActionsProps = {
   children:
     | React.ReactElement<typeof Button>
     | React.ReactElement<typeof Button>[];
 };
 
-const AlertActions: React.FC<AlertActionsProps> = ({ children }) => {
+const ModalActions: React.FC<ModalActionsProps> = ({ children }) => {
   return (
-    <div
+    <section
       className={`${styles["field-row"]}`}
       style={{ justifyContent: "flex-end" }}
     >
       {children}
-    </div>
+    </section>
   );
 };
 
-export default AlertActions;
+export default ModalActions;
