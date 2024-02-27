@@ -6,15 +6,19 @@ export type ModelessContentProps = {
 };
 
 const ModelessContent: React.FC<ModelessContentProps> = ({ children }) => {
-  let content: React.ReactNode[] = []
+  let content: React.ReactNode[] = [];
   Children.forEach(children, (child, i) => {
     content.push(
-      <div key={i} className={`${styles["field-row"]}`} style={{ justifyContent: "flex-start", margin: "10px" }}>
+      <div
+        key={i}
+        className={`${styles["field-row"]}`}
+        style={{ justifyContent: "flex-start", margin: "10px" }}
+      >
         {child}
-      </div>
+      </div>,
     );
   });
-  
+
   return content;
 };
 

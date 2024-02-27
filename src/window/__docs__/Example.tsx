@@ -12,7 +12,7 @@ const Example: FC<WindowProps> = (props) => {
         height: "100%",
       }}
     >
-      <Window {...props}/>
+      <Window {...props} />
     </div>
   );
 };

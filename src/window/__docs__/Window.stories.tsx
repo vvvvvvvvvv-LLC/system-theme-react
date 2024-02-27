@@ -19,7 +19,7 @@ export const Primary: Story = {
         <h1>Look a window!</h1>
         <p>Here's a bunch of content in a window</p>
         <p>Lorem ipsum bla bla bla</p>
-      </Window.Pane>
+      </Window.Pane>,
     ],
   },
 };
@@ -37,7 +37,7 @@ export const WithDetails: Story = {
         <h1>Look a window!</h1>
         <p>Here's a bunch of content in a window</p>
         <p>Lorem ipsum bla bla bla</p>
-      </Window.Pane>
+      </Window.Pane>,
     ],
   },
 };
@@ -45,7 +45,7 @@ export const WithDetails: Story = {
 export const Inactive: Story = {
   args: {
     children: [
-      <Window.TitleBar title="A Titlebar" inactive/>,
+      <Window.TitleBar title="A Titlebar" inactive />,
       <Window.DetailsBar>
         <p>Here are</p>
         <p>Some</p>
@@ -55,7 +55,7 @@ export const Inactive: Story = {
         <h1>Look a window!</h1>
         <p>Here's a bunch of content in a window</p>
         <p>Lorem ipsum bla bla bla</p>
-      </Window.Pane>
+      </Window.Pane>,
     ],
   },
 };

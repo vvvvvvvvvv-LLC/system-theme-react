@@ -39,7 +39,6 @@ export const WithBoth: Story = {
   },
 };
 
-
 export const Inactive: Story = {
   args: {
     title: "Inactive",

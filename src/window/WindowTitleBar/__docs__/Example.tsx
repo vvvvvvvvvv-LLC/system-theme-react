@@ -13,7 +13,7 @@ const Example: FC<TitleBarProps> = (props) => {
       }}
     >
       <div className={`${styles["window"]}`} style={{ width: "30rem" }}>
-        <TitleBar {...props}/>
+        <TitleBar {...props} />
       </div>
     </div>
   );

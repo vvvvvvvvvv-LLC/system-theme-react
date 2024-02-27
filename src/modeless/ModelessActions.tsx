@@ -13,7 +13,7 @@ const ModelessActions: React.FC<ModelessActionsProps> = ({ children }) => {
   return (
     <div
       className={`${styles["field-row"]}`}
-      style={{ justifyContent: "flex-end", margin: "15px"}}
+      style={{ justifyContent: "flex-end", margin: "15px" }}
     >
       {children}
     </div>
