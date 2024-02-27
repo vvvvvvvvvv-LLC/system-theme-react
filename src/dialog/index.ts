@@ -1,11 +1,14 @@
-import { attachSubComponents } from "../util";
-
 import DialogParent from "./Dialog";
 export type { DialogProps } from "./Dialog";
 
 import Text from "./DialogText";
 export type { DialogTextProps } from "./DialogText";
 
-export const Dialog = attachSubComponents("Dialog", DialogParent, { Text });
+type DialogNamespace = typeof DialogParent & {
+  Text: typeof Text,
+};
+
+const Dialog = DialogParent as DialogNamespace;
+Dialog.Text = Text;
 
 export default Dialog;

@@ -2,6 +2,7 @@
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies } from "./package.json";
+import { resolve } from 'path';
 
 export default defineConfig({
   css: {
@@ -32,5 +33,10 @@ export default defineConfig({
     globals: true,
     environment: "jsdom",
     setupFiles: "./setupTests.ts",
+  },
+  resolve: {
+    alias: {
+      fonts: resolve("./node_modules/@sakun/system.css/dist"),
+    },
   },
 });
