@@ -8,12 +8,12 @@ export type ButtonProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
-function Button({
+const Button: React.FC<ButtonProps> = ({
   children,
   primary,
   disabled,
   onClick,
-}: ButtonProps) {
+}) => {
   let className = `${styles["btn"]}`;
   if (primary && !disabled) {
     className += ` ${styles["btn-default"]}`;
