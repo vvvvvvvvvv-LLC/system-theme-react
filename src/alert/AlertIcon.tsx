@@ -4,7 +4,7 @@ export type AlertIconProps = {
   children: React.ReactNode;
 };
 
-function AlertIcon({ children }: AlertIconProps) {
+const AlertIcon: React.FC<AlertIconProps> = ({ children }) => {
   return (
     <div className={styles["outer-border"]}>
       { children }

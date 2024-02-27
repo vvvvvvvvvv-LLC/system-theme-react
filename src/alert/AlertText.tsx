@@ -4,7 +4,7 @@ export type AlertTextProps = {
   children: string;
 };
 
-function AlertText({ children }: AlertTextProps) {
+const AlertText: React.FC<AlertTextProps> = ({ children }) => {
   return (
     <p className={styles["alert-text"]} style={{ paddingLeft: "10px" }}>
       {children}
