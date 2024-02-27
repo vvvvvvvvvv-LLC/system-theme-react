@@ -10,8 +10,8 @@ export type * from "./dialog";
 export * from "./modal";
 export type * from "./modal";
 
-export * from "./modeless"
-export type * from "./modeless"
+export * from "./modeless";
+export type * from "./modeless";
 
 export * from "./select";
 export type * from "./select";

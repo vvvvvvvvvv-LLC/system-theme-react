@@ -1,10 +1,9 @@
 import React, { FC } from "react";
 import Select from "..";
 
-export type ExampleProps = {
-};
+export type ExampleProps = {};
 
-const Example: FC<ExampleProps> = ({ }) => {
+const Example: FC<ExampleProps> = ({}) => {
   return (
     <div
       style={{

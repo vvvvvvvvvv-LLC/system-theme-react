@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "../styles";
 
-export type ButtonProps = React.ComponentProps<'button'> & { primary?: boolean };
+export type ButtonProps = React.ComponentProps<"button"> & {
+  primary?: boolean;
+};
 
-const Button: React.FC<ButtonProps> = ({
-  primary,
-  children,
-  ...props
-}) => {
+const Button: React.FC<ButtonProps> = ({ primary, children, ...props }) => {
   let className = `${styles["btn"]}`;
   if (primary && !props.disabled) {
     className += ` ${styles["btn-default"]}`;
