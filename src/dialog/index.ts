@@ -5,7 +5,7 @@ import Text from "./DialogText";
 export type { DialogTextProps } from "./DialogText";
 
 type DialogNamespace = typeof DialogParent & {
-  Text: typeof Text,
+  Text: typeof Text;
 };
 
 const Dialog = DialogParent as DialogNamespace;

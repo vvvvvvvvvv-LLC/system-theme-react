@@ -20,7 +20,8 @@ const Example: FC<ExampleProps> = ({ title }) => {
     >
       <Modal title={title}>
         <Modal.Content>
-          This is some random content for the modal. It can be anything you want.
+          This is some random content for the modal. It can be anything you
+          want.
         </Modal.Content>
         <Modal.Actions>
           <Button>Cancel</Button>

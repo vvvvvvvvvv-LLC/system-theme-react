@@ -2,8 +2,7 @@ import React, { FC } from "react";
 import Alert from "../index";
 import { Button } from "../../button";
 
-export type ExampleProps = {
-};
+export type ExampleProps = {};
 
 const Example: FC<ExampleProps> = ({}) => {
   return (
@@ -18,7 +17,9 @@ const Example: FC<ExampleProps> = ({}) => {
       <div style={{ width: "20rem" }}>
         <Alert>
           <Alert.Icon>icon</Alert.Icon>
-          <Alert.Text>This is some very long message. Maybe an error??</Alert.Text>
+          <Alert.Text>
+            This is some very long message. Maybe an error??
+          </Alert.Text>
           <Alert.Actions>
             <Button>Cancel</Button>
             <Button primary>OK</Button>

@@ -2,14 +2,14 @@
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
 import { peerDependencies } from "./package.json";
-import { resolve } from 'path';
+import { resolve } from "path";
 
 export default defineConfig({
   css: {
     transformer: "postcss",
     modules: {
-      scopeBehaviour: 'local',
-      hashPrefix: 'vvvvvvvvvv'
+      scopeBehaviour: "local",
+      hashPrefix: "vvvvvvvvvv",
     },
   },
   build: {
@@ -20,10 +20,7 @@ export default defineConfig({
       formats: ["cjs", "es"], // Specifies the output formats (CommonJS and ES modules).
     },
     rollupOptions: {
-      external: [
-        "./style.css",
-        ...Object.keys(peerDependencies),
-      ],
+      external: ["./style.css", ...Object.keys(peerDependencies)],
     },
     sourcemap: true, // Generates source maps for debugging.
     emptyOutDir: true, // Clears the output directory before building.

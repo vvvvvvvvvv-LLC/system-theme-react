@@ -8,8 +8,8 @@ export type AlertProps = {
   children: [
     React.ReactElement<typeof AlertIcon>,
     React.ReactElement<typeof AlertText>,
-    React.ReactElement<typeof AlertActions>
-  ],
+    React.ReactElement<typeof AlertActions>,
+  ];
 };
 
 function Alert({ children }: AlertProps) {
@@ -20,18 +20,27 @@ function Alert({ children }: AlertProps) {
   return (
     <div className={outerClass}>
       <div className={innerClass}>
-        <div className={contentsClass} style={{paddingLeft: "30px", paddingRight: "20px"}}>
-          <section className={`${styles["field-row"]}`} style={{ justifyContent: "flex-start" }}>
+        <div
+          className={contentsClass}
+          style={{ paddingLeft: "30px", paddingRight: "20px" }}
+        >
+          <section
+            className={`${styles["field-row"]}`}
+            style={{ justifyContent: "flex-start" }}
+          >
             {children.filter((child) => child.type === AlertIcon)}
             {children.filter((child) => child.type === AlertText)}
           </section>
-          <section className={`${styles["field-row"]}`} style={{ justifyContent: "flex-end" }}>
+          <section
+            className={`${styles["field-row"]}`}
+            style={{ justifyContent: "flex-end" }}
+          >
             {children.filter((child) => child.type === AlertActions)}
           </section>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Alert;
