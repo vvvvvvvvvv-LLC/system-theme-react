@@ -1,25 +1,18 @@
-import React, { MouseEventHandler } from "react";
+import React from "react";
 import styles from "../styles";
 
-export type ButtonProps = {
+export type ButtonProps = React.ComponentProps<"button"> & {
   primary?: boolean;
-  disabled?: boolean;
-  children?: React.ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
 };
 
-const Button: React.FC<ButtonProps> = ({
-  children,
-  primary,
-  disabled,
-  onClick,
-}) => {
+const Button: React.FC<ButtonProps> = ({ primary, children, ...props }) => {
   let className = `${styles["btn"]}`;
-  if (primary && !disabled) {
+  if (primary && !props.disabled) {
     className += ` ${styles["btn-default"]}`;
   }
+
   return (
-    <button className={className} disabled={disabled} onClick={onClick}>
+    <button className={className} {...props}>
       {children}
     </button>
   );
