@@ -4,7 +4,7 @@ import MenuBar from "..";
 export type ExampleProps = {
 };
 
-const Example: FC<ExampleProps> = ({ line1, line2 }) => {
+const Example: FC<ExampleProps> = ({}) => {
   return (
     <div
       style={{

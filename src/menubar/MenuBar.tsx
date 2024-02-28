@@ -8,7 +8,7 @@ export type MenuBarProps = {
 
 const MenuBar: React.FC<MenuBarProps> = ({ children }) => {
   return (
-    <ul role="menubar">
+    <ul role="menu-bar">
       {children}
     </ul>
   );
