@@ -1,15 +1,16 @@
 import React from "react";
 import MenuBarMenu from "./MenuBarMenu";
+import "@sakun/system.css";
 import styles from "../styles";
 
 export type MenuBarItemProps = {
-  title: string;
-  children?: React.ReactNode | React.ReactElement<typeof MenuBarMenu>;
+  children?: React.ReactNode | [React.ReactNode, React.ReactElement<typeof MenuBarMenu>];
   onClick?: React.MouseEventHandler<HTMLLIElement>;
+  divider?: boolean;
 };
 
 
-const MenuBarItem: React.FC<MenuBarItemProps> = ({ title, onClick, children }) => {
+const MenuBarItem: React.FC<MenuBarItemProps> = ({ onClick, divider, children }) => {
   const ariaHasPopup = React.Children.toArray(children).find((child) => {
     // if the child is an object with the key 'type' and the type is MenuBarMenu then return true
     if (
@@ -24,8 +25,7 @@ const MenuBarItem: React.FC<MenuBarItemProps> = ({ title, onClick, children }) =
   }) !== undefined;
 
   return (
-    <li role={`${styles["menu-item"]}`} aria-haspopup={ariaHasPopup} onClick={onClick}>
-      {title}
+    <li className={`${divider ? styles["divider"] : ""}`} role="menu-item" aria-haspopup={ariaHasPopup} tabIndex={0} onClick={onClick}>
       {children}
     </li>
   );

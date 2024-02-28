@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "./MenuBarItem";
-import styles from "../styles";
+import "@sakun/system.css";
 
 export type MenuBarMenuProps = {
   children: React.ReactElement<typeof Item> | React.ReactElement<typeof Item>[];
@@ -8,7 +8,7 @@ export type MenuBarMenuProps = {
 
 const MenuBarMenu: React.FC<MenuBarMenuProps> = ({ children }) => {
   return (
-    <ul role={`${styles["menu"]}`}>
+    <ul role="menu">
       {children}
     </ul>
   );
