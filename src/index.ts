@@ -20,7 +20,7 @@ export * from "./select";
 export type * from "./select";
 
 export * from "./textbox";
-export type * fro "./textbox";
+export type * from "./textbox";
 
 export * from "./window";
 export type * from "./window";
