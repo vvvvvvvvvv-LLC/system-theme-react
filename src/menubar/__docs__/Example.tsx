@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import MenuBar from "..";
 
-export type ExampleProps = {
-};
+export type ExampleProps = {};
 
 const Example: FC<ExampleProps> = ({}) => {
   return (
@@ -18,22 +17,40 @@ const Example: FC<ExampleProps> = ({}) => {
         <MenuBar.Item>
           File
           <MenuBar.Menu>
-            <MenuBar.Item ><a href="#menu">Open</a></MenuBar.Item>
-            <MenuBar.Item ><a href="#menu">Save</a></MenuBar.Item>
-            <MenuBar.Item ><a href="#menu">Another</a></MenuBar.Item>
-            <MenuBar.Item divider><a href="#menu">Option</a></MenuBar.Item>
-            <MenuBar.Item ><a href="#menu">These</a></MenuBar.Item>
-            <MenuBar.Item ><a href="#menu">Are</a></MenuBar.Item>
-            <MenuBar.Item ><a href="#menu">Separate</a></MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">Open</a>
+            </MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">Save</a>
+            </MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">Another</a>
+            </MenuBar.Item>
+            <MenuBar.Item divider>
+              <a href="#menu">Option</a>
+            </MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">These</a>
+            </MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">Are</a>
+            </MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">Separate</a>
+            </MenuBar.Item>
           </MenuBar.Menu>
         </MenuBar.Item>
         <MenuBar.Item>
-          <a href="https://google.com" target="_blank">Googz</a>
+          <a href="https://google.com" target="_blank">
+            Googz
+          </a>
         </MenuBar.Item>
         <MenuBar.Item>
           More Stuff
           <MenuBar.Menu>
-            <MenuBar.Item ><a href="#menu">Action</a></MenuBar.Item>
+            <MenuBar.Item>
+              <a href="#menu">Action</a>
+            </MenuBar.Item>
           </MenuBar.Menu>
         </MenuBar.Item>
       </MenuBar>

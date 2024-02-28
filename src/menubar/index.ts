@@ -1,11 +1,11 @@
-import MenuBarParent from './MenuBar';
-export type { MenuBarProps } from './MenuBar';
+import MenuBarParent from "./MenuBar";
+export type { MenuBarProps } from "./MenuBar";
 
-import Menu from './MenuBarMenu';
-export type { MenuBarMenuProps } from './MenuBarMenu';
+import Menu from "./MenuBarMenu";
+export type { MenuBarMenuProps } from "./MenuBarMenu";
 
-import Item from './MenuBarItem';
-export type { MenuBarItemProps } from './MenuBarItem';
+import Item from "./MenuBarItem";
+export type { MenuBarItemProps } from "./MenuBarItem";
 
 type MenuBarNamespace = typeof MenuBarParent & {
   Item: typeof Item;
