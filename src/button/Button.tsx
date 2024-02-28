@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../styles";
 
-export type ButtonProps = React.ComponentProps<"button"> & {
+export type ButtonProps = Omit<React.ComponentProps<"button">, 'className'> & {
   primary?: boolean;
 };
 

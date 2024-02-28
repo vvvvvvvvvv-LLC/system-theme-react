@@ -1,7 +1,7 @@
 import React from "react";
 import "@sakun/system.css";
 
-export type TextBoxProps = React.ComponentProps<"input"> & {
+export type TextBoxProps = Omit<React.ComponentProps<"input">, "type"> & {
   label: string;
 };
 
