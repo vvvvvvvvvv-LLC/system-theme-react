@@ -1,7 +1,7 @@
 import React from "react";
 
 // the props are exactly the same as the select component
-export type SelectProps = React.ComponentProps<"button">;
+export type SelectProps = React.ComponentProps<"select">;
 
 // Apparently we don't actually need to style this component.
 // That's not ideal because we want to make sure the styles
