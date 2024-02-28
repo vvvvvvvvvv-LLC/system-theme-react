@@ -1,5 +1,5 @@
 import React from "react";
-import "@sakun/system.css"
+import "@sakun/system.css";
 
 export type RadioButtonProps = Omit<React.ComponentProps<"input">, "type"> & {
   label: string;
@@ -12,6 +12,6 @@ const RadioButton: React.FC<RadioButtonProps> = (props) => {
       <label htmlFor={props.id}>{props.label}</label>
     </div>
   );
-}
+};
 
 export default RadioButton;
