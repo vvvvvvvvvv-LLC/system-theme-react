@@ -7,6 +7,9 @@ export type * from "./button";
 export * from "./dialog";
 export type * from "./dialog";
 
+export * from "./menubar";
+export type * from "./menubar";
+
 export * from "./modal";
 export type * from "./modal";
 
