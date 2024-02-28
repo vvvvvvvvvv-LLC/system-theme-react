@@ -8,7 +8,7 @@ export type CheckBoxProps = Omit<React.ComponentProps<"input">, "type"> & {
 const CheckBox: React.FC<CheckBoxProps> = (props) => {
   return (
     <div>
-      <input {...props} type="checkbox"/>
+      <input {...props} type="checkbox" />
       <label htmlFor={props.id}>{props.label}</label>
     </div>
   );

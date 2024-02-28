@@ -15,20 +15,9 @@ const Example: FC<ExampleProps> = ({}) => {
       }}
     >
       <form>
-        <CheckBox
-          label="A defaulted textbox"
-          id="id1"
-          defaultChecked
-        />
-        <CheckBox
-          label="This has a placeholder"
-          id="id2"
-        />
-        <CheckBox
-          label="This one is disabled"
-          id="id3"
-          disabled
-        />
+        <CheckBox label="A defaulted textbox" id="id1" defaultChecked />
+        <CheckBox label="This has a placeholder" id="id2" />
+        <CheckBox label="This one is disabled" id="id3" disabled />
       </form>
     </div>
   );
