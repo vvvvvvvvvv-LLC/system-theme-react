@@ -27,6 +27,15 @@ const Example: FC<ExampleProps> = ({}) => {
             <MenuBar.Item ><a href="#menu">Separate</a></MenuBar.Item>
           </MenuBar.Menu>
         </MenuBar.Item>
+        <MenuBar.Item>
+          <a href="https://google.com" target="_blank">Googz</a>
+        </MenuBar.Item>
+        <MenuBar.Item>
+          More Stuff
+          <MenuBar.Menu>
+            <MenuBar.Item ><a href="#menu">Action</a></MenuBar.Item>
+          </MenuBar.Menu>
+        </MenuBar.Item>
       </MenuBar>
     </div>
   );
