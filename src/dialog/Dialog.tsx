@@ -9,7 +9,7 @@ export type DialogProps = {
 };
 
 const Dialog: React.FC<DialogProps> = ({ children }) => {
-  const className = `${styles["standard-dialog"]} ${styles["center"]} ${styles["scale-down"]}`;
+  const className = `${styles["standard-dialog"]} ${styles["center"]}`;
   return <div className={className}>{children}</div>;
 };
 
