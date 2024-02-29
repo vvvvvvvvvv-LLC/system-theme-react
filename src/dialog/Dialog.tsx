@@ -1,11 +1,8 @@
 import React from "react";
-import { DialogTextProps } from "./DialogText";
 import styles from "../styles";
 
 export type DialogProps = {
-  children?:
-    | React.ReactElement<DialogTextProps>
-    | React.ReactElement<DialogTextProps>[];
+  children?: React.ReactNode;
 };
 
 const Dialog: React.FC<DialogProps> = ({ children }) => {
