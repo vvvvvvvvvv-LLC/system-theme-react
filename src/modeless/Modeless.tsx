@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles";
-import Window from "../window";
+import { Window } from "../window";
 
 import ModelessContent from "./ModelessContent";
 import ModelessActions from "./ModelessActions";
