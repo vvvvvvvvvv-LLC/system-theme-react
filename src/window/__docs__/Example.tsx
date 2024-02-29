@@ -1,6 +1,5 @@
 import React, { FC } from "react";
-import Window, { WindowProps } from "../index";
-import styles from "../../styles";
+import { Window, WindowProps } from "../index";
 
 const Example: FC<WindowProps> = (props) => {
   return (
