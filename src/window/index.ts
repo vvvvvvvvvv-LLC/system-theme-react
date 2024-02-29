@@ -21,4 +21,4 @@ Window.TitleBar = TitleBar;
 Window.DetailsBar = DetailsBar;
 Window.Pane = Pane;
 
-export default Window;
+export { Window };

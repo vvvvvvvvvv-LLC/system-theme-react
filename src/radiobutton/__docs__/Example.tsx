@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import RadioButton from "..";
+import { RadioButton } from "..";
 
 export type ExampleProps = {};
 

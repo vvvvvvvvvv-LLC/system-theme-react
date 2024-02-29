@@ -11,4 +11,4 @@ type SelectNamespace = typeof SelectParent & {
 const Select = SelectParent as SelectNamespace;
 Select.Option = Option;
 
-export default Select;
+export { Select };

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Select from "..";
+import { Select } from "..";
 
 export type ExampleProps = {};
 

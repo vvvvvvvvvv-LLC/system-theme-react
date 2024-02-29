@@ -16,4 +16,4 @@ const MenuBar = MenuBarParent as MenuBarNamespace;
 MenuBar.Item = Item;
 MenuBar.Menu = Menu;
 
-export default MenuBar;
+export { MenuBar };

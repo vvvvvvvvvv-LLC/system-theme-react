@@ -16,4 +16,4 @@ const Modeless = ModelessParent as ModelessNamespace;
 Modeless.Content = Content;
 Modeless.Actions = Actions;
 
-export default Modeless;
+export { Modeless };

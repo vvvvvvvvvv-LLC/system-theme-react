@@ -16,4 +16,4 @@ const Modal = ModalParent as ModalNamespace;
 Modal.Content = Content;
 Modal.Actions = Actions;
 
-export default Modal;
+export { Modal };

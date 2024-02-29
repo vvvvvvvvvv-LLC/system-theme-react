@@ -11,4 +11,4 @@ type DialogNamespace = typeof DialogParent & {
 const Dialog = DialogParent as DialogNamespace;
 Dialog.Text = Text;
 
-export default Dialog;
+export { Dialog };

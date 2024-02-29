@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import TextBox from "..";
+import { TextBox } from "..";
 
 export type ExampleProps = {};
 

@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import MenuBar from "..";
+import { MenuBar } from "..";
 
 export type ExampleProps = {};
 

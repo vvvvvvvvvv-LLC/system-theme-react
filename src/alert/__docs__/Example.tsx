@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Alert from "../index";
+import { Alert } from "../index";
 import { Button } from "../../button";
 
 export type ExampleProps = {};

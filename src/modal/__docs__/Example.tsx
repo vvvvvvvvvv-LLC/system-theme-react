@@ -1,7 +1,6 @@
 import React, { FC } from "react";
-import Modal from "../index";
+import { Modal } from "../index";
 import { Button } from "../../button";
-import styles from "../../styles";
 
 export type ExampleProps = {
   title: string;

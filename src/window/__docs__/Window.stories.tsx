@@ -1,7 +1,7 @@
 import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import Example from "./Example";
-import Window from "..";
+import { Window } from "..";
 
 const meta: Meta<typeof Example> = {
   title: "Window",

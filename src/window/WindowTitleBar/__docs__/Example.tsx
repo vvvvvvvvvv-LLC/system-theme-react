@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import TitleBar, { TitleBarProps } from "../index";
+import TitleBar, { TitleBarProps } from "..";
 import styles from "../../../styles";
 
 const Example: FC<TitleBarProps> = (props) => {

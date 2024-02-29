@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import CheckBox from "..";
+import { CheckBox } from "..";
 
 export type ExampleProps = {};
 

@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import Example from "./Example";
-import Dialog from "..";
+import { Dialog } from "..";
 
 const meta: Meta<typeof Example> = {
   title: "Dialog",

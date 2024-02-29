@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Modeless from "../index";
+import { Modeless } from "../index";
 import { Button } from "../../button";
 
 export type ExampleProps = {

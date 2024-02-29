@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import Dialog from "../index";
+import { Dialog } from "../index";
 
 export type ExampleProps = {
   line1: string;

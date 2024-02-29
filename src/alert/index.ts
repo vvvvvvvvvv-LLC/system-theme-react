@@ -21,4 +21,4 @@ Alert.Icon = Icon;
 Alert.Text = Text;
 Alert.Actions = Actions;
 
-export default Alert;
+export { Alert };
