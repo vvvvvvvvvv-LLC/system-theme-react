@@ -1,13 +1,15 @@
 {
-  "name": "@vvvvvvvvvv-llc/system-theme-react",
+  "name": "@vvvvvvvvvv/system-theme-react",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vvvvvvvvvv-LLC/system-theme-react.git"
   },
+  "private": false,
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "system.css theme wrapped for React",
   "type": "module",
   "main": "dist/index.cjs.js",

@@ -30,7 +30,7 @@ Why not.
 ## Using in your project ##
 
 ```
-npm install @vvvvvvvvvv-llc/system-theme-react
+npm install @vvvvvvvvvv/system-theme-react
 ```
 
 Then import whatever components you need in your `.tsx`.
@@ -40,7 +40,7 @@ import {
     Window,
     MenuBar,
     // etc...
-} from "@vvvvvvvvvv-llc/system-theme-react";
+} from "@vvvvvvvvvv/system-theme-react";
 ```
 
 See the usage in the storybook example source code for (very sloppy) examples of how to use and compose components.
