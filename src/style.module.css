@@ -6,3 +6,8 @@
   margin-right: 0;
   margin-top: 0;
 }
+
+/* override the margin on windows from the library */
+.window {
+  margin: 0;
+}

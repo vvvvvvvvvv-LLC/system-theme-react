@@ -9,7 +9,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "system.css theme wrapped for React",
   "type": "module",
   "main": "dist/index.cjs.js",
